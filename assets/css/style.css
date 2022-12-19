@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body{
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(237, 246, 247, 0.43);
+}
+
+header{
+    text-align: center;
+    padding: 38px 0px;
+    background: #ffffff;
+    box-shadow: 0 0 3px 0px #00000030;
+    margin-bottom: 30px;
+}
+.project-title{
+    position: relative;
+}
+.project-title h3{
+    margin: 0;
+    color: #2398a7;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.github-link{
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+.github-link img{
+    width: 60px;
+}
+.main-wrapper .navigation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    min-height: 50vh;
+    justify-content: space-evenly;
+}
+.navigation a{
+    background: #2398a7;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+}
+.navigation a:hover{
+    background: #175861;
+}
+
+
+/* Drag Me Any Where */
+
+.dragMeAnyWhere{
+    background: #84c2e8;
+    position: absolute;
+    padding: 30px 20px;
+    color: #fff;
+    left: 5px;
+    cursor: pointer;
+}
+/* Drag And Drop List */
+.drag-list-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.drag-list-wrapper .left-list{
+    flex-basis: 30vw;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.12);
+    padding: 5px;
+    
+}
+.drag-list-wrapper .right-list{
+    flex-basis: 30vw;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.12);
+    padding: 5px;
+}
+.drag-list-wrapper .left-list h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #F44336;
+    border-bottom: 1px solid #F44336;
+    text-transform: uppercase;
+}
+.drag-list-wrapper .right-list h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+    text-transform: uppercase;
+}
+.drag-list-wrapper .left-list .dragMe,
+.drag-list-wrapper .right-list .dragMe{
+    padding: 10px 5px;
+    background: #68d1ff;
+    border: 2px solid #81b0c5;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* drag and copy */
+.dragCopyWrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.draggableElement{
+    flex-basis: 20vw;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.12);
+    padding: 5px;
+
+}
+.dragCopyWrapper .dropHere{
+    flex-basis: 60vw;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.12);
+    padding: 5px;
+    position: relative;
+}
+.draggableElement .dragMe,.dragCopyWrapper .dragMe{
+    background: #2d85ad;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.draggableElement .dragMe{
+    padding: 10px 5px;
+    margin-bottom: 5px;
+}
+.dragCopyWrapper .dragMe{
+    padding: 10px 20px;
+}
